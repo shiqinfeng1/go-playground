@@ -6,6 +6,7 @@ require (
 	github.com/alphadose/zenq/v2 v2.8.2
 	github.com/dgraph-io/badger/v3 v3.2103.5
 	github.com/rs/zerolog v1.29.0
+	github.com/vmihailenco/msgpack v4.0.4+incompatible
 )
 
 require (
@@ -26,4 +27,5 @@ require (
 	go.opencensus.io v0.22.5 // indirect
 	golang.org/x/net v0.0.0-20201021035429-f5854403a974 // indirect
 	golang.org/x/sys v0.0.0-20221010170243-090e33056c14 // indirect
+	google.golang.org/appengine v1.4.0 // indirect
 )
