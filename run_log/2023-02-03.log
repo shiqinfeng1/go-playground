@@ -1,0 +1,72 @@
+{"level":"info","bool":true,"string":"with aaa","message":"log1 ok"}
+{"level":"debug","bool":true,"string":"with aaa","string":"debug with bbb","message":"公共前缀 log1 ok"}
+{"level":"warn","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"error","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"info","message":"log2 ok"}
+{"level":"info","dict":{"bar":"baz","n":1},"message":"嵌套使用"}
+{"string":"err with ccc","error":"公共前缀 不打印level","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:39"}
+{"level":"info","string":"err with ccc","error":"公共前缀 error","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:40"}
+{"level":"info","time":"2023-02-03 13:43:38","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:43:40","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:43:42","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:43:44","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","bool":true,"string":"with aaa","message":"log1 ok"}
+{"level":"debug","bool":true,"string":"with aaa","string":"debug with bbb","message":"公共前缀 log1 ok"}
+{"level":"warn","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"error","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"info","message":"log2 ok"}
+{"level":"info","dict":{"bar":"baz","n":1},"message":"嵌套使用"}
+{"string":"err with ccc","error":"公共前缀 不打印level","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:42"}
+{"level":"info","string":"err with ccc","error":"公共前缀 error","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:43"}
+{"level":"info","time":"2023-02-03 13:59:12","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:14","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:16","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:18","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","bool":true,"string":"with aaa","message":"log1 ok"}
+{"level":"debug","bool":true,"string":"with aaa","string":"debug with bbb","message":"公共前缀 log1 ok"}
+{"level":"warn","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"error","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"info","message":"log2 ok"}
+{"level":"info","dict":{"bar":"baz","n":1},"message":"嵌套使用"}
+{"string":"err with ccc","error":"公共前缀 不打印level","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:42"}
+{"level":"info","string":"err with ccc","error":"公共前缀 error","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:43"}
+{"level":"info","time":"2023-02-03 13:59:26","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:26","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:26","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:27","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","bool":true,"string":"with aaa","message":"log1 ok"}
+{"level":"debug","bool":true,"string":"with aaa","string":"debug with bbb","message":"公共前缀 log1 ok"}
+{"level":"warn","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"error","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"info","message":"log2 ok"}
+{"level":"info","dict":{"bar":"baz","n":1},"message":"嵌套使用"}
+{"string":"err with ccc","error":"公共前缀 不打印level","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:42"}
+{"level":"info","string":"err with ccc","error":"公共前缀 error","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:43"}
+{"level":"info","time":"2023-02-03 13:59:48","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:48","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:48","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:49","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","bool":true,"string":"with aaa","message":"log1 ok"}
+{"level":"debug","bool":true,"string":"with aaa","string":"debug with bbb","message":"公共前缀 log1 ok"}
+{"level":"warn","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"error","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"info","message":"log2 ok"}
+{"level":"info","dict":{"bar":"baz","n":1},"message":"嵌套使用"}
+{"string":"err with ccc","error":"公共前缀 不打印level","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:42"}
+{"level":"info","string":"err with ccc","error":"公共前缀 error","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:43"}
+{"level":"info","time":"2023-02-03 13:59:52","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:52","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:52","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 13:59:53","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","bool":true,"string":"with aaa","message":"log1 ok"}
+{"level":"debug","bool":true,"string":"with aaa","string":"debug with bbb","message":"公共前缀 log1 ok"}
+{"level":"warn","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"error","bool":true,"string":"with aaa","string":"warn with bbb","message":"公共前缀log1 ok"}
+{"level":"info","message":"log2 ok"}
+{"level":"info","dict":{"bar":"baz","n":1},"message":"嵌套使用"}
+{"string":"err with ccc","error":"公共前缀 不打印level","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:42"}
+{"level":"info","string":"err with ccc","error":"公共前缀 error","caller":"/home/sqf/workspace/go-playground/cmd/zerolog/main.go:43"}
+{"level":"info","time":"2023-02-03 14:05:10","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 14:05:10","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 14:05:11","message":"采样日志: 每10个日志打印1个"}
+{"level":"info","time":"2023-02-03 14:05:11","message":"采样日志: 每10个日志打印1个"}
