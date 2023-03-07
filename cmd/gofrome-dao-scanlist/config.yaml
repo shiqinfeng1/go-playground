@@ -1,0 +1,25 @@
+
+# Database.
+database:
+  logger:
+    level: "all"
+    stdout: true
+    Path: "./log/sql"
+  default:
+    link: "mysql:jzsg:Jzsg@1234@tcp(192.168.72.36:33306)/recdb?loc=Local&parseTime=true"
+    extra: ""                             # "(可选)不同数据库的额外特性配置，由底层数据库driver定义"
+    role: "master"                        # "(可选)数据库主从角色(master/slave)，不使用应用层的主从机制请均设置为master"
+    debug: "true"                         # "(可选)开启调试模式"
+    prefix: ""                            # "(可选)表名前缀"
+    dryRun: 0                             # "(可选)ORM空跑(只读不写)"
+    charset: "utf8mb4"                    # "(可选)数据库编码(如: utf8/gbk/gb2312)，一般设置为utf8"
+    weight: ""                            # "(可选)负载均衡权重，用于负载均衡控制，不使用应用层的负载均衡机制请置空"
+    maxIdle: "200"                         # "(可选)连接池最大闲置的连接数"
+    maxOpen: "1000"                        # "(可选)连接池最大打开的连接数"
+    maxLifetime: "1000s"                   # "(可选)连接对象可重复使用的时间长度"
+    createdAt: "created_at"                # "(可选)自动创建时间字段名称"
+    updatedAt: "updated_at"                # "(可选)自动更新时间字段名称"
+    deletedAt: "deleted_at"                # "(可选)软删除时间字段名称"
+    timeMaintainDisabled: false           # "(可选)是否完全关闭时间更新特性，true时CreatedAt/UpdatedAt/DeletedAt都将失效"
+  init:
+    link: "mysql:root:Admin@1234@tcp(192.168.72.36:33306)"
