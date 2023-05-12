@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-12T06:51:44.692Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.68" etag="GKSpiwU9GP2l-qw3PXMB" version="21.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-12T06:54:04.166Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.68" etag="oMYA9cCch4-Fv1doeErO" version="21.2.9" type="github">
   <diagram name="第 1 页" id="E3n1WXMuvQouduq9jZph">
     <mxGraphModel dx="1129" dy="673" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -131,6 +131,9 @@
         </mxCell>
         <mxCell id="znZ222ZgF7L_4XlqrHwq-36" value="封装db和cache一致性的事务" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=15;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="310" y="242.5" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="znZ222ZgF7L_4XlqrHwq-37" value="flow数据存储示意图" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="275" y="120" width="130" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
