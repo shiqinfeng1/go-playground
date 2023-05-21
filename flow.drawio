@@ -1,9 +1,30 @@
-<mxfile host="app.diagrams.net" modified="2023-05-21T10:05:42.283Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" version="21.3.2" etag="358JQUdIDSMUIVNoZQVC" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-21T10:35:50.441Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="UiOcdzdLudiJGJHCiQaN" version="21.3.2" type="github">
   <diagram name="第 1 页" id="mIYh2Olo3zjWcgwkDcKo">
-    <mxGraphModel>
+    <mxGraphModel dx="903" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="HFnXFwNVYUh2nl7cipx7-2" value="consensus" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="150" y="370" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HFnXFwNVYUh2nl7cipx7-4" value="ledger" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="282" y="370" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HFnXFwNVYUh2nl7cipx7-5" value="state" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="414" y="370" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HFnXFwNVYUh2nl7cipx7-6" value="crypto" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="210" y="450" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HFnXFwNVYUh2nl7cipx7-7" value="storage" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="340" y="450" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HFnXFwNVYUh2nl7cipx7-8" value="network" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="470" y="450" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HFnXFwNVYUh2nl7cipx7-9" value="fvm" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="548" y="370" width="110" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
