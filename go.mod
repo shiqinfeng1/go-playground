@@ -9,6 +9,7 @@ require (
 	github.com/gogf/gf/contrib/drivers/mysql/v2 v2.3.2
 	github.com/gogf/gf/v2 v2.3.2
 	github.com/rs/zerolog v1.29.0
+	github.com/sethvargo/go-retry v0.2.4
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
 )
 
