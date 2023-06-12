@@ -20,7 +20,6 @@ func main() {
 		conn, err := listener.Accept()
 		if err != nil {
 			log.Fatal("Accept error:", err)
-			continue
 		}
 		log.Println("accept a client conn")
 		// go rpc.ServeConn(conn)

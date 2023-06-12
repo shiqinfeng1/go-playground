@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"go-playground/cmd/rpc/server/service"
 	"log"
+	"net"
 	"net/rpc"
+	"net/rpc/jsonrpc"
 )
 
 type HelloServiceClient struct {
@@ -16,11 +18,17 @@ func (p *HelloServiceClient) Hello(request string, reply *string) error {
 }
 
 func DialHelloService(network, address string) (*HelloServiceClient, error) {
-	c, err := rpc.Dial(network, address)
+	// c, err := rpc.Dial(network, address)
+	// if err != nil {
+	// 	return nil, err
+	// }
+	// return &HelloServiceClient{client: c}, nil
+
+	conn, err := net.Dial(network, address)
 	if err != nil {
-		return nil, err
+		log.Fatal("net.Dial:", err)
 	}
-	return &HelloServiceClient{client: c}, nil
+	return &HelloServiceClient{client: rpc.NewClientWithCodec(jsonrpc.NewClientCodec(conn))}, nil
 }
 
 var _ service.HelloServiceIntf = (*HelloServiceClient)(nil)
