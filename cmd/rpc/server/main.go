@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	// fmt.Printf("print a null string:%v", nil)
 	service.RegisterHelloService(new(service.HelloService))
 
 	listener, err := net.Listen("tcp", ":1234")
