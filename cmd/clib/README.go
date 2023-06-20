@@ -1,0 +1,1 @@
+go  build -ldflags "-extldflags -static" cmd/clib/main.go 
