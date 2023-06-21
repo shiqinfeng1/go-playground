@@ -1,11 +1,11 @@
-syntax = "proto3";
+syntax = "proto3";  // 开头的syntax语句表示采用proto3的语法
 
-package service;
+package main; // 指明当前的包名称
 
 service HelloService {
     rpc Hello (String) returns (String);
 }
 
 message String {
-    string value = 1;
+    string value = 1; // 通过成员的唯一编号来绑定对应的数据
 }

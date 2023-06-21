@@ -1,0 +1,43 @@
+package main
+
+import (
+	"log"
+	"net"
+	"net/rpc"
+)
+
+// rpc服务名称
+const HelloServiceName = "HelloService"
+
+// rpc服务实例
+type HelloService struct{}
+
+// rpc服务的实现
+func (p *HelloService) Hello(request string, reply *string) error {
+	*reply = "hello " + request
+	log.Println("reply:", *reply)
+	return nil
+}
+
+func main() {
+	// 实例化一个服务
+	svc := &HelloService{}
+	// 注册该服务
+	rpc.RegisterName(HelloServiceName, svc)
+
+	// 在tcp上监听客户端请求
+	listener, err := net.Listen("tcp", ":1234")
+	if err != nil {
+		log.Fatal("ListenTCP error:", err)
+	}
+
+	for {
+		conn, err := listener.Accept()
+		if err != nil {
+			log.Fatal("Accept error:", err)
+		}
+		log.Println("accept a client conn")
+		go rpc.ServeConn(conn)
+	}
+
+}
