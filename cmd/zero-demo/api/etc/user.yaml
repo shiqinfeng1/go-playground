@@ -4,3 +4,8 @@ Port: 8888
 Auth: 
   AccessSecret: "12345678"
   AccessExpire: 60
+GreetRPC:
+  Etcd:
+    Hosts:
+      - 127.0.0.1:32379
+    Key: greet.rpc
