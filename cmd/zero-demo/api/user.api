@@ -1,0 +1,68 @@
+// api语法版本
+syntax = "v2"
+
+info(
+	author: "syzfeng"
+	date: "2023-06-21"
+	desc: "api例子"
+)
+
+// user 服务
+type (
+	// 定义登录接口的请求体
+	LoginReq {
+		Username string `json:"username"`
+		Password string `json:"password"`
+	}
+	// 定义登录接口的响应体
+	LoginResp {
+		Id       int64  `json:"id"`
+		Name     string `json:"name"`
+		Token    string `json:"token"`
+		ExpireAt uint64 `json:"expireAt"`
+	}
+)
+@server (
+	group: user
+	prefix: /v1/user
+)
+service user {
+	@doc "用户登录"
+	@handler Login
+	post /login (LoginReq) returns (LoginResp)
+}
+
+type (
+	InfoReq {
+		Id int64 `json:"id"`
+	}
+	InfoResp {
+		Id      int64  `json:"id"`
+		Name    string `json:"name"`
+		Address string `json:"addrress"`
+	}
+	SetInfoReq {
+		Id      int64  `json:"id"`
+		Name    string `json:"name"`
+		Address string `json:"addrress"`
+	}
+	SetInfoResp {
+	}
+)
+
+@server (
+	group: user
+	prefix: /v1/user
+	jwt: Auth
+	timeout: 3s
+	maxBytes: 1024
+)
+service user {
+	@doc "用户信息查询"
+	@handler Info
+	get /info (InfoReq) returns (InfoResp)
+
+	@doc "用户信息查询"
+	@handler Set
+	post /info (SetInfoReq) returns (SetInfoResp)
+}
