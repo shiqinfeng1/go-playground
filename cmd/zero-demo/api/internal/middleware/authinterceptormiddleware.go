@@ -1,19 +1,24 @@
 package middleware
 
-import "net/http"
+import (
+	"go-playground/cmd/zero-demo/api/internal/logic/ctxdata"
+	"net/http"
 
-type AuthInterceptorMiddleware struct {
+	"github.com/zeromicro/go-zero/core/logx"
+)
+
+type AuthCheck struct {
 }
 
-func NewAuthInterceptorMiddleware() *AuthInterceptorMiddleware {
-	return &AuthInterceptorMiddleware{}
+func NewAuthCheck() *AuthCheck {
+	return &AuthCheck{}
 }
 
-func (m *AuthInterceptorMiddleware) Handle(next http.HandlerFunc) http.HandlerFunc {
+func (m *AuthCheck) Handle(next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		// TODO generate middleware implement function, delete after code implementation
-
-		// Passthrough to next handler if need
+		ctx := r.Context()
+		uid := ctxdata.GetUserId(ctx)
+		logx.WithContext(ctx).Infof("get userid by AuthCheck: %v", uid)
 		next(w, r)
 	}
 }

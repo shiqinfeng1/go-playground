@@ -56,7 +56,7 @@ type (
 	jwt: Auth
 	timeout: 3s
 	maxBytes: 1024
-	middleware: AuthInterceptor
+	middleware: AuthCheck
 )
 service user {
 	@doc "用户信息查询"

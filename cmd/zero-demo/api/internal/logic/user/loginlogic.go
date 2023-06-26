@@ -32,9 +32,9 @@ func getJwtToken(secretKey []byte, userId uint64) (string, error) {
 	claim := MyClaims{
 		Userid: userId,
 		RegisteredClaims: jwt.RegisteredClaims{
-			ExpiresAt: jwt.NewNumericDate(time.Now().Add(30 * time.Second * time.Duration(1))), // 过期时间3小时
-			IssuedAt:  jwt.NewNumericDate(time.Now()),                                          // 签发时间
-			NotBefore: jwt.NewNumericDate(time.Now()),                                          // 生效时间
+			ExpiresAt: jwt.NewNumericDate(time.Now().Add(30 * time.Hour * time.Duration(1))), // 过期时间3小时
+			IssuedAt:  jwt.NewNumericDate(time.Now()),                                        // 签发时间
+			NotBefore: jwt.NewNumericDate(time.Now()),                                        // 生效时间
 		}}
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claim) // 使用HS256算法
 	resp, err := token.SignedString(secretKey)

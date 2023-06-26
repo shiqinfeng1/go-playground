@@ -10,16 +10,16 @@ import (
 )
 
 type ServiceContext struct {
-	Config          config.Config
-	AuthInterceptor rest.Middleware
+	Config    config.Config
+	AuthCheck rest.Middleware
 	//定义rpc类型
 	Greet greet.Greet
 }
 
 func NewServiceContext(c config.Config) *ServiceContext {
 	return &ServiceContext{
-		Config:          c,
-		AuthInterceptor: middleware.NewAuthInterceptorMiddleware().Handle,
+		Config:    c,
+		AuthCheck: middleware.NewAuthCheck().Handle,
 		//引入gprc服务
 		Greet: greet.NewGreet(zrpc.MustNewClient(c.GreetRPC)),
 	}

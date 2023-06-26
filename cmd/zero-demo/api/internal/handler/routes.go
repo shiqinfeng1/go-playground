@@ -25,7 +25,7 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 
 	server.AddRoutes(
 		rest.WithMiddlewares(
-			[]rest.Middleware{serverCtx.AuthInterceptor},
+			[]rest.Middleware{serverCtx.AuthCheck},
 			[]rest.Route{
 				{
 					Method:  http.MethodGet,
