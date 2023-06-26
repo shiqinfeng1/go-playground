@@ -25,7 +25,5 @@ func NewSendMessageLogic(ctx context.Context, svcCtx *svc.ServiceContext) *SendM
 
 // 定义客户端流式 rpc
 func (l *SendMessageLogic) SendMessage(in *pb.SendMessageReq) (*pb.SendMessageResp, error) {
-	// todo: add your logic here and delete this line
-
-	return &pb.SendMessageResp{Status: 123789}, nil
+	return &pb.SendMessageResp{Status: l.svcCtx.Config.ListenOn}, nil
 }

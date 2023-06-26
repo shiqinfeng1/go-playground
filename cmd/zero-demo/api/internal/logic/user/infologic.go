@@ -35,8 +35,8 @@ func (l *InfoLogic) Info(req *types.InfoReq) (resp *types.InfoResp, err error) {
 	}
 
 	resp = &types.InfoResp{}
-	resp.Id = int64(smrsp.Status)
-	resp.Address = "addr"
-	resp.Name = "name"
+	resp.Id = 123456789
+	resp.Address = smrsp.Status
+	resp.Name = "smrsp.Status"
 	return
 }

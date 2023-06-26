@@ -16,7 +16,7 @@ message SendMessageReq{
   string message = 1;
 }
 message SendMessageResp{
-  int32 status = 1;
+  string status = 1;
 }
 
 message GetMessageReq{
