@@ -3,6 +3,7 @@ package user
 import (
 	"context"
 
+	"go-playground/cmd/zero-demo/api/internal/logic/ctxdata"
 	"go-playground/cmd/zero-demo/api/internal/svc"
 	"go-playground/cmd/zero-demo/api/internal/types"
 
@@ -24,7 +25,7 @@ func NewInfoLogic(ctx context.Context, svcCtx *svc.ServiceContext) *InfoLogic {
 }
 
 func (l *InfoLogic) Info(req *types.InfoReq) (resp *types.InfoResp, err error) {
-	// todo: add your logic here and delete this line
+	logx.WithContext(l.ctx).Errorf("GetUidFromCtx : %+v", ctxdata.GetUserId(l.ctx))
 	resp = &types.InfoResp{}
 	resp.Id = 1
 	resp.Address = "addr"

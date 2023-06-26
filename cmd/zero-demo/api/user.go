@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"net/http"
 
 	"go-playground/cmd/zero-demo/api/internal/config"
 	"go-playground/cmd/zero-demo/api/internal/handler"
@@ -10,6 +11,7 @@ import (
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"
+	xhttp "github.com/zeromicro/x/http"
 )
 
 var configFile = flag.String("f", "etc/user.yaml", "the config file")
@@ -20,7 +22,9 @@ func main() {
 	var c config.Config
 	conf.MustLoad(*configFile, &c)
 
-	server := rest.MustNewServer(c.RestConf)
+	server := rest.MustNewServer(c.RestConf, rest.WithUnauthorizedCallback(func(w http.ResponseWriter, r *http.Request, err error) {
+		xhttp.JsonBaseResponseCtx(r.Context(), w, err)
+	}))
 	defer server.Stop()
 
 	ctx := svc.NewServiceContext(c)
