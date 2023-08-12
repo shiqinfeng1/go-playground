@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	github.com/alphadose/zenq/v2 v2.8.2
+	github.com/axgle/mahonia v0.0.0-20180208002826-3358181d7394
 	github.com/dgraph-io/badger/v3 v3.2103.5
 	github.com/flytam/filenamify v1.1.2
 	github.com/gogf/gf/contrib/drivers/mysql/v2 v2.3.2
