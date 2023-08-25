@@ -16,6 +16,7 @@ require (
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
 	github.com/zeromicro/go-zero v1.5.3
 	github.com/zeromicro/x v0.0.0-20230424055333-01c7fb9548d4
+	golang.org/x/crypto v0.6.0
 	google.golang.org/grpc v1.55.0
 	google.golang.org/protobuf v1.30.0
 )
