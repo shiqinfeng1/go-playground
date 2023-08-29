@@ -8,6 +8,7 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/gogf/gf/v2/os/gsession"
 	"golang.org/x/time/rate"
 )
 
@@ -34,4 +35,5 @@ func main() {
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGQUIT, syscall.SIGTERM)
 	<-quit
+	gsession.DefaultStorageFileCryptoKey
 }

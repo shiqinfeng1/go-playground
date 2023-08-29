@@ -11,12 +11,14 @@ require (
 	github.com/gogf/gf/v2 v2.3.2
 	github.com/golang-jwt/jwt/v4 v4.5.0
 	github.com/golang/protobuf v1.5.3
+	github.com/gorilla/websocket v1.5.0
 	github.com/rs/zerolog v1.29.0
 	github.com/sethvargo/go-retry v0.2.4
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
 	github.com/zeromicro/go-zero v1.5.3
 	github.com/zeromicro/x v0.0.0-20230424055333-01c7fb9548d4
 	golang.org/x/crypto v0.6.0
+	golang.org/x/time v0.3.0
 	google.golang.org/grpc v1.55.0
 	google.golang.org/protobuf v1.30.0
 )
@@ -54,7 +56,6 @@ require (
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
-	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/grokify/html-strip-tags-go v0.0.1 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.15.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
@@ -103,7 +104,6 @@ require (
 	golang.org/x/sys v0.8.0 // indirect
 	golang.org/x/term v0.8.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
-	golang.org/x/time v0.3.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20230306155012-7f2fa6fef1f4 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
