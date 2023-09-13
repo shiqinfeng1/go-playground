@@ -36,9 +36,12 @@ func main() {
 		}
 	})
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "websockets.html")
-	})
+	fs := http.FileServer(http.Dir("./"))
+	http.Handle("/", fs)
+
+	// http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "websockets.html")
+	// })
 	log.Println("start listen ...")
 	http.ListenAndServe(":8080", nil)
 }

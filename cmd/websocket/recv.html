@@ -1,0 +1,93 @@
+<!-- websockets.html -->
+<html>
+
+<head>
+    <meta charset="utf-8"> 
+    <title>测试工具-接收</title> 
+    <!-- <script type="text/javascript" src="js/jquery.min.js"> -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+    <p>
+    <h2>报文接收</h2>
+    <p>
+    <a href="index.html">
+        <button>返回首页</button>
+    </a>
+    </p>
+    <div>
+        网络协议:
+        <input type="radio" value="UDP" name="proto">UDP
+        <input type="radio" value="IPMulti" name="proto">IP组播
+    </div>
+    <div>
+        监听IP地址: <input type="text" name="destIP" placeholder="例如: 192.168.77.99" />
+    </div>
+    <div>
+        监听端口号: <input type="text" name="destPort" placeholder="例如: 8180" />
+    </div>
+
+    <div>
+        报文发送控制:
+        <input id="list" onclick="acheck1()" type="radio" checked="checked" name="list" value="1">按数量
+        <input id="list" onclick="acheck2()" type="radio" name="list" value="2">按时间
+    </div>
+    <p class="box1" style="display:block;">
+        发送数量: <input type="text" name="pktCounts" placeholder="单位个.例如: 2000" />
+    </p>
+    <p class="box2" style="display:none;">
+        发送速率: <input type="text" name="pktRate" placeholder="单位pps.例如: 200" />发送时长: <input type="text" name="pktDuration" placeholder="单位秒.例如: 20" />
+    </p>
+
+    </p>
+    <button onclick="send()">发送</button>
+    <button onclick="send()">下载测试数据</button>
+    <pre id="output"></pre>
+    
+</body>
+<script>
+    // var input = document.getElementById("input");
+    var output = document.getElementById("output");
+    var socket = new WebSocket("ws://192.168.72.36:8080/echo");
+    
+
+    socket.onopen = function () {
+        output.innerHTML += "【发送结果】 \n";
+    };
+
+
+    socket.onmessage = function (e) {
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date+' '+time;
+        output.innerHTML += dateTime+" 发送成功: " + e.data + "  ";
+        output.innerHTML += "发送失败: " + e.data + " ";
+        output.innerHTML += "耗时: " + e.data + "s\n";
+    };
+    function send() {
+        socket.send("9999");
+        // input.value = "";
+    };
+    function acheck1() {
+        $(".box1").show();
+        $(".box2").hide();
+    };
+    function acheck2() {
+        $(".box2").show();
+        $(".box1").hide();
+    };
+    $(function () {
+        var list = $('#list:checked').val();
+        if (list == 1) {
+            $(".box1").show();
+        }
+        if (list == 2) {
+            $(".box2").show();
+        }
+    });
+</script>
+
+</html>
